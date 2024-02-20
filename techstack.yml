@@ -1,0 +1,175 @@
+repo_name: ucids/recipe-app-api
+report_id: f70c36cc9790cac4cd16c977f2de7a1b
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-20T18:55:40+00:00'
+requested_by: ucids
+provider: github
+branch: main
+detected_tools_count: 8
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/ucids/recipe-app-api
+  detection_source: Repo Metadata
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/ucids/recipe-app-api
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ucids/recipe-app-api
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/ucids/recipe-app-api/blob/main/.github/workflows/checks.yml
+  detection_source: ".github/workflows/checks.yml"
+  last_updated_by: uri
+  last_updated_on: 2023-01-21 01:54:58.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/ucids/recipe-app-api/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: uri
+  last_updated_on: 2023-01-21 01:37:51.000000000 Z
+- name: flake8
+  description: Tool for style guide enforcement
+  website_url: https://github.com/PyCQA/flake8
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/4838/default_c37162891c64eca7fafe782d9c191e409aae1e93.png
+  detection_source_url: https://github.com/ucids/recipe-app-api/blob/main/requirements.dev.txt
+  detection_source: requirements.dev.txt
+  last_updated_by: uri
+  last_updated_on: 2023-01-21 01:37:51.000000000 Z
+- name: Django
+  description: A high-level Python Web framework that encourages rapid development
+    and clean
+  package_url: https://pypi.org/project/Django
+  version: 3.2.4
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19832/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
+  detection_source_url: https://github.com/ucids/recipe-app-api/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: uri
+  last_updated_on: 2023-01-21 01:37:51.000000000 Z
+  vulnerabilities:
+  - name: Django bypasses validation when using one form field to upload multiple
+      files
+    cve_id: CVE-2023-31047
+    cve_url: https://github.com/advisories/GHSA-r3xc-prgr-mg9p
+    detected_date: May 10
+    severity: critical
+    first_patched: 3.2.19
+  - name: SQL Injection in Django
+    cve_id: CVE-2022-28347
+    cve_url: https://github.com/advisories/GHSA-w24h-v9qh-8gxj
+    detected_date: Apr 23
+    severity: critical
+    first_patched: 3.2.13
+  - name: SQL Injection in Django
+    cve_id: CVE-2021-35042
+    cve_url: https://github.com/advisories/GHSA-xpfp-f569-q3p2
+    detected_date: Sep 23
+    severity: critical
+    first_patched: 3.2.5
+  - name: SQL Injection in Django
+    cve_id: CVE-2022-28346
+    cve_url: https://github.com/advisories/GHSA-2gwj-7jmv-h26r
+    detected_date: Apr 27
+    severity: critical
+    first_patched: 3.2.13
+  - name: Denial-of-service in Django
+    cve_id: CVE-2021-45115
+    cve_url: https://github.com/advisories/GHSA-53qw-q765-4fww
+    detected_date: Jan 13
+    severity: high
+    first_patched: 3.2.11
+  - name: Potential bypass of an upstream access control based on URL paths in Django
+    cve_id: CVE-2021-44420
+    cve_url: https://github.com/advisories/GHSA-v6rh-hp5x-86rv
+    detected_date: Dec 14
+    severity: high
+    first_patched: 3.2.10
+  - name: 'Django vulnerable to Reflected File Download attack '
+    cve_id: CVE-2022-36359
+    cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
+    detected_date: Aug 12
+    severity: high
+    first_patched: 3.2.15
+  - name: Resource exhaustion in Django
+    cve_id: CVE-2023-24580
+    cve_url: https://github.com/advisories/GHSA-2hrw-hx67-34x6
+    detected_date: Feb 16
+    severity: high
+    first_patched: 3.2.18
+  - name: Information disclosure in Django
+    cve_id: CVE-2021-45116
+    cve_url: https://github.com/advisories/GHSA-8c5j-9r9f-c6w8
+    detected_date: Jan 13
+    severity: high
+    first_patched: 3.2.11
+  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
+    cve_id: CVE-2023-36053
+    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
+    detected_date: Jul 6
+    severity: high
+    first_patched: 3.2.20
+  - name: Directory-traversal in Django
+    cve_id: CVE-2021-45452
+    cve_url: https://github.com/advisories/GHSA-jrh2-hc4r-7jwx
+    detected_date: Jan 13
+    severity: moderate
+    first_patched: 3.2.11
+- name: djangorestframework
+  description: Web APIs for Django, made easy
+  package_url: https://pypi.org/project/djangorestframework
+  version: 3.12.4
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19870/default_d05f6f09935776629f62e8aed365805502c14921.png
+  detection_source_url: https://github.com/ucids/recipe-app-api/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: uri
+  last_updated_on: 2023-01-21 01:37:51.000000000 Z
